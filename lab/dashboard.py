@@ -21,6 +21,8 @@ def layout():
     device_usage_chart.display_plot()
     
     views_graph.display_plot()
+    
+    read_css()
 
 def read_css():
     css_path = Path(__file__).parent / "frontend" / "style.css"
