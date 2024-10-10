@@ -24,4 +24,6 @@ class ContentKPI:
 
 # create more KPIs here
 class DeviceKPI:
+    def __init__(self) -> None:
+        self._content = QueryDatabase("SELECT * FROM marts.device_views_date;").df
     pass 
