@@ -1,0 +1,7 @@
+class Color:
+    PRIMARY="#050505"
+    BACKGROUND="#F2F2F2"
+    BLUE="#44F2D2"
+    YELLOW="#F2CA50"
+    ORANGE="#F26241"
+    PURPLE="#67428C"

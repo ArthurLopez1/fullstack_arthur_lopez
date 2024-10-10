@@ -7,8 +7,8 @@ class ContentKPI:
 
     def display_content(self):
         df = self._content
-        st.markdown("## KPIer för videor")
-        st.markdown("Nedan visas KPIer för totalt antal")
+        st.markdown("## Overview")
+        #st.markdown("Nedan visas KPIer för totalt antal")
 
         kpis = {
             "videor": len(df),
@@ -22,8 +22,4 @@ class ContentKPI:
                 st.metric(kpi, round(kpis[kpi]))
         st.dataframe(df)
 
-# create more KPIs here
-class DeviceKPI:
-    def __init__(self) -> None:
-        self._content = QueryDatabase("SELECT * FROM marts.device_views_date;").df
-    pass 
+
