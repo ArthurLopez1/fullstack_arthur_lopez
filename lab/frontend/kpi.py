@@ -8,13 +8,12 @@ class ContentKPI:
     def display_content(self):
         df = self._content
         st.markdown("### Overview")
-        #st.markdown("Nedan visas KPIer för totalt antal")
 
         kpis = {
-            "videor": len(df),
-            "visade timmar": df["Visningstid_timmar"].sum(),
-            "prenumeranter": df["Prenumeranter"].sum(),
-            "exponeringar": df["Exponeringar"].sum(),
+            "Videos": len(df),
+            "Hours": df["Visningstid_timmar"].sum(),
+            "Subscriptions": df["Prenumeranter"].sum(),
+            "Exposures": df["Exponeringar"].sum(),
         }
 
         for col, kpi in zip(st.columns(len(kpis)), kpis):
