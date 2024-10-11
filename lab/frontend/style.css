@@ -18,6 +18,10 @@
   --primaryColor: #050505;
   --backgroundColor: #fafafa;
   --backgroundColorSecondary: #ebebeb;
+  --RED1: "#F20C36";
+  --RED2: "#A60F1B";
+  --RED4: "#73141B";
+  --RED4: "#1E2126";
 }
 
 .stAppViewMain {
@@ -29,7 +33,10 @@ body * + * {
 }
 
 h1,
-h2,
+h2 {
+  color: var(--RED1);
+},
+
 h3,
 p {
   color: var(--primaryColor);
